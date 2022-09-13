@@ -28,6 +28,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var minTempLabel: UILabel!
     @IBOutlet weak var maxTempLabel: UILabel!
+    @IBOutlet weak var feelsLike : UILabel!
     
     private func setWeatherUI(){
         let url = URL(string: "https://openweathermap.org/img/wn/\(self.weather?.icon ?? "00")@2x.png")
@@ -38,6 +39,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         tempLabel.text = "\(main!.temp)"
         minTempLabel.text = "\(main!.temp_min)"
         maxTempLabel.text = "\(main!.temp_max)"
+        feelsLike.text = "\(main!.feels_like)"
     }
     
     
@@ -74,8 +76,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             locationManager.startUpdatingLocation()
             lat = location?.latitude
             lon = location?.longitude
-            print("\(lat!), \(lon!)")
-            
         } else {
             print("위치 서비스 허용 Off")
         }
