@@ -15,12 +15,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var locationManager : CLLocationManager!
     var lat : Double!
     var lon: Double!
-   
     
     //날씨 서비스 속성
     var weather : Weather?
     var main : Main?
     var name : String?
+    
+    //날씨에 따른 옷 차림 속성
+    var cloth9: UIImage?
+    var cloth12: UIImage?
+    var cloth17: UIImage?
+    var cloth20: UIImage?
+    var cloth23: UIImage?
+    var cloth28: UIImage?
     
     //날씨 서비스 UI 연결
     //StoryBoard와 연결
@@ -29,6 +36,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var minTempLabel: UILabel!
     @IBOutlet weak var maxTempLabel: UILabel!
     @IBOutlet weak var feelsLike : UILabel!
+    @IBOutlet weak var todayCloth : UIImageView!
     
     private func setWeatherUI(){
         let url = URL(string: "https://openweathermap.org/img/wn/\(self.weather?.icon ?? "00")@2x.png")
@@ -46,6 +54,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //옷장
+        cloth9 = UIImage(named: "9")
+        cloth12 = UIImage(named: "12")
+        cloth17 = UIImage(named: "17")
+        cloth20 = UIImage(named: "20")
+        cloth23 = UIImage(named: "23")
+        cloth28 = UIImage(named: "28")
+        
         //위치 함수 
         getLocation()
         //날씨 함수
@@ -62,6 +78,26 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 print("error")
             }
         }
+        
+        
+        todayCloth.image = cloth20
+        
+        //옷장 꺼냄
+//        if currentTemp < 12 {
+//            todayCloth.image = cloth9
+//        } else if currentTemp < 17 {
+//            todayCloth.image = cloth12
+//        } else if currentTemp < 20 {
+//            todayCloth.image = cloth17
+//        } else if currentTemp < 23 {
+//            todayCloth.image = cloth20
+//        } else if currentTemp < 28 {
+//            todayCloth.image = cloth23
+//        } else {
+//            todayCloth.image = cloth28
+//        }
+        
+        
     }
     
     //위치 정보 얻기

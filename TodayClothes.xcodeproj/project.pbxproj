@@ -11,11 +11,10 @@
 		D6A1589B28CABF5E00419C60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A1589A28CABF5E00419C60 /* SceneDelegate.swift */; };
 		D6A1589D28CABF5E00419C60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A1589C28CABF5E00419C60 /* ViewController.swift */; };
 		D6A158A028CABF5E00419C60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A1589E28CABF5E00419C60 /* Main.storyboard */; };
-		D6A158A228CABF5F00419C60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A158A128CABF5F00419C60 /* Assets.xcassets */; };
+		D6A158A228CABF5F00419C60 /* asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A158A128CABF5F00419C60 /* asset.xcassets */; };
 		D6A158A528CABF5F00419C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A158A328CABF5F00419C60 /* LaunchScreen.storyboard */; };
 		D6A158B428CABFF200419C60 /* weatherApi.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6A158B328CABFF200419C60 /* weatherApi.plist */; };
 		D6A158B628CAC00700419C60 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A158B528CAC00700419C60 /* Weather.swift */; };
-		D6D1AA9B28D05DD9005230CD /* Clothes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D1AA9A28D05DD9005230CD /* Clothes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +23,11 @@
 		D6A1589A28CABF5E00419C60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D6A1589C28CABF5E00419C60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6A1589F28CABF5E00419C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D6A158A128CABF5F00419C60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6A158A128CABF5F00419C60 /* asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = asset.xcassets; sourceTree = "<group>"; };
 		D6A158A428CABF5F00419C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6A158A628CABF5F00419C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6A158B328CABFF200419C60 /* weatherApi.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = weatherApi.plist; sourceTree = "<group>"; };
 		D6A158B528CAC00700419C60 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		D6D1AA9A28D05DD9005230CD /* Clothes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +73,6 @@
 				D6A1589C28CABF5E00419C60 /* ViewController.swift */,
 				D6A158B528CAC00700419C60 /* Weather.swift */,
 				D6A158B328CABFF200419C60 /* weatherApi.plist */,
-				D6D1AA9A28D05DD9005230CD /* Clothes.swift */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -84,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				D6A1589E28CABF5E00419C60 /* Main.storyboard */,
-				D6A158A128CABF5F00419C60 /* Assets.xcassets */,
+				D6A158A128CABF5F00419C60 /* asset.xcassets */,
 				D6A158A328CABF5F00419C60 /* LaunchScreen.storyboard */,
 				D6A1589828CABF5E00419C60 /* AppDelegate.swift */,
 				D6A1589A28CABF5E00419C60 /* SceneDelegate.swift */,
@@ -152,7 +149,7 @@
 			files = (
 				D6A158B428CABFF200419C60 /* weatherApi.plist in Resources */,
 				D6A158A528CABF5F00419C60 /* LaunchScreen.storyboard in Resources */,
-				D6A158A228CABF5F00419C60 /* Assets.xcassets in Resources */,
+				D6A158A228CABF5F00419C60 /* asset.xcassets in Resources */,
 				D6A158A028CABF5E00419C60 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,7 +164,6 @@
 				D6A1589D28CABF5E00419C60 /* ViewController.swift in Sources */,
 				D6A1589928CABF5E00419C60 /* AppDelegate.swift in Sources */,
 				D6A158B628CAC00700419C60 /* Weather.swift in Sources */,
-				D6D1AA9B28D05DD9005230CD /* Clothes.swift in Sources */,
 				D6A1589B28CABF5E00419C60 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
